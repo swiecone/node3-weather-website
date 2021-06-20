@@ -145,7 +145,7 @@ app.get('*', (req, res) =>{
     res.render('404', {
         title: 'Page not Found',
         text: 'Sorry dude, you got yourself into a 404.',
-        author: 'Alex Swiec',
+        author: 'Alex Swiecsta',
         year: 2021
     })})
 
