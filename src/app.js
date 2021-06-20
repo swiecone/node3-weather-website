@@ -30,8 +30,8 @@ app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather app',
         name: 'Alex',
-        author: 'Alex',
-        year: 2020
+        author: 'Alex Swiec',
+        year: 2021
     })
 })
 
@@ -39,8 +39,8 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
         name: 'Alex',
-        author: 'Alex',
-        year: 2020
+        author: 'Alex Swiec',
+        year: 2021
     })
 })
 
@@ -48,8 +48,8 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help Page',
         helpText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        author: 'Alex',
-        year: 2020
+        author: 'Alex Swiec',
+        year: 2021
     })
 })
 
@@ -119,33 +119,20 @@ app.get('/weather', (req, res) => {
 
 })
 
-app.get('/products', (req, res) =>{
-    if(!req.query.search) {
-        return res.send({
-            error: "You must provide a search term"
-        })
-    }
-
-
-    console.log(req.query.search) 
-    res.send({
-        products: []
-    })
-})
 
 app.get('/help/*', (req, res) =>{
     res.render('404', {
         title: 'Page not Found',
         text: 'Sorry dude, we did not find that help article.  Here you can find more articles.',
-        author: 'Alex',
-        year: 2020
+        author: 'Alex Swiec',
+        year: 2021
     })})
 
 app.get('*', (req, res) =>{
     res.render('404', {
         title: 'Page not Found',
         text: 'Sorry dude, you got yourself into a 404.',
-        author: 'Alex Swiecsta',
+        author: 'Alex Swiec',
         year: 2021
     })})
 
